@@ -1,0 +1,40 @@
+.food-item {
+    width: 13vmax;
+    height: 25vmax;
+    margin: 1vmax;
+    padding: 1vmax;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border-radius: 1vmax;
+}
+
+h2 {
+    margin: 5vmax;
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+.food-item img {
+    margin-top: 1.5vmax;
+}
+
+.foods {
+    margin-top: 10vh;
+    margin-left: 5vmax;
+    margin-right: 5vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.foodItemFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.foodItemFooter i {
+    color: #FC8019;
+}

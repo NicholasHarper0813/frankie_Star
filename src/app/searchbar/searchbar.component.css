@@ -1,0 +1,15 @@
+.search{
+    background-color: #FC8019;
+    display: flex;
+    flex-direction: row;
+    padding: 1vmax;
+    align-content: center;
+    color: white;
+    justify-content: center;
+}
+.search input{
+    background-color: inherit;
+    margin-left: 2vmax;
+    margin-right: 2vmax;
+    height: 3vmax;
+}

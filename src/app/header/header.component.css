@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    align-self: center;
+}
+.logo{
+    display: inline-flex;
+}
+.headerAction{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 35vw;
+}
+.headerAction i{
+    font-size: 2vmax;
+    margin-top: 1vh;
+}

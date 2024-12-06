@@ -1,0 +1,15 @@
+<h2>Personalized recommendations</h2>
+<div *ngIf="loading">loading</div>
+<div *ngIf="!loading && foodItem.length === 0">No food items available.</div>
+<div *ngIf="!loading && foodItem.length > 0" class="foods">
+    <div *ngFor="let item of foodItem" class="food-item">
+        <img [src]="item.image_url" alt="{{ item.name }}" width="150">
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.type }}</p>
+        <div class="foodItemFooter">
+            <p><i class="pi pi-tag"></i>{{ item.price }}</p>
+            <p><i class="pi pi-truck"></i>{{ item.delivery_time }}</p>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,33 @@
+.food-item {
+    width: 13vmax;
+    height: 25vmax;
+    margin-left: 4vmax;
+    margin-bottom: 2vmax;
+    padding: 1vmax;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1vmax;
+}
+h2 {
+    margin: 5vmax;
+}
+.food-item img{
+    margin-top: 1.5vmax;
+}
+.foods{
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: space-around;
+}
+.foodItemFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.foodItemFooter i{
+    color: #FC8019;
+}
