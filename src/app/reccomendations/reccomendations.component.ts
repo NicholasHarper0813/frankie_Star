@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component,OnDestroy,OnInit } from '@angular/core';
 import { SupabaseService } from '../supabase.service';
-
+import { Component,OnDestroy,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-reccomendations',
@@ -10,25 +9,25 @@ import { SupabaseService } from '../supabase.service';
   templateUrl: './reccomendations.component.html',
   styleUrl: './reccomendations.component.css'
 })
+  
 export class ReccomendationsComponent implements OnInit,OnDestroy {
     foodItem: any[] = [];
-  loading: boolean = true;
-  errorMessage: string = '';
-  constructor(private supabaseService: SupabaseService) { }
-  ngOnDestroy(): void {
-  }
-  ngOnInit(): void {
-    this.fetchFoodItem();
-  }
-  async fetchFoodItem() {
-    this.loading = true;
-    try {
-      this.foodItem = await this.supabaseService.getFoodItems();
-    } catch (error: any) {
-      this.errorMessage = 'Error fetching food items: ' + error.message;
-      console.error(this.errorMessage);
-    } finally {
-      this.loading = false;
+    loading: boolean = true;
+    errorMessage: string = '';
+    constructor(private supabaseService: SupabaseService) { }
+    ngOnDestroy(): void {}
+    ngOnInit(): void {this.fetchFoodItem();}
+    async fetchFoodItem() {
+      this.loading = true;
+      try {
+        this.foodItem = await this.supabaseService.getFoodItems();
+      } 
+      catch (error: any) {
+        this.errorMessage = 'Error fetching food items: ' + error.message;
+        console.error(this.errorMessage);
+      } 
+      finally {
+        this.loading = false;
+      }
     }
   }
-}
